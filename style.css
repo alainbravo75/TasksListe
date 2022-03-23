@@ -39,6 +39,10 @@ justify-content: center;
     padding: 12px;
     font-weight: 500;
 }
+.new-task-container input:focus {
+    outline: none;
+    border-color: #41b883;
+}
 .new-task-button {
     flex: 1;
     border-radius: 5px;
@@ -51,4 +55,22 @@ justify-content: center;
     padding: 12px;
     margin-left: 9px;
     cursor: pointer;
+}
+
+.task-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/* Utilities */
+.error {
+    border:  2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
 }
